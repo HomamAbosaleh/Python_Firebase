@@ -7,8 +7,8 @@ import re
 daysDic = {"ÇARŞAMBA":"Wednesday", "PERŞEMBE":"Thursday", "CUMA":"Friday", "PAZARTESİ":"Monday", "SALI":"Tuesday"}
 
 def main():
-    T = pd.read_excel(r'C:/Users/Hammam/VisualCode/Python_programming/firebase_professors/professors.xlsx')
-    cred = credentials.Certificate("C:/Users/Hammam/VisualCode/Python_programming/firebase_yemekhane/serviceAccountKey.json")
+    T = pd.read_excel(r'excel file path')
+    cred = credentials.Certificate("Firebase service key path")
     firebase_admin.initialize_app(cred)
 
     db = firestore.client()
